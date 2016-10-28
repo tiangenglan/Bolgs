@@ -13,6 +13,7 @@ namespace Bolgs.Controllers
 
         public ActionResult Index()
         {
+            ViewData["this"] = "欢迎我的博客！";
             return View();
         }
 
