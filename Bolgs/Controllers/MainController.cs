@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Timers;
 
 
 namespace Bolgs.Controllers
@@ -14,6 +15,8 @@ namespace Bolgs.Controllers
 
         public ActionResult Index()
         {
+            Timer time = new Timer();
+            time.Enabled = true;
             
             return View();
         }
