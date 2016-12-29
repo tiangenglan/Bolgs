@@ -44,7 +44,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq; 
 using System.Text;
-namespace Gozyy.CarMaint.Models 
+namespace Gozyy.ToolClass.Models 
 {
         [Gozyy.Repositories.TableName("<#=className#>")]
 		<# foreach(DbColumn column1 in DbHelper.GetDbColumns(config.ConnectionString, config.DbDatabase, className)){#>
@@ -93,8 +93,8 @@ namespace Gozyy.CarMaint.Models
 <#+
 	public class config
 	{
-		public static readonly string ConnectionString= "server=.;database=PMTData;User Id=sa;pwd=0306;Enlist=true;Pooling=true;Max Pool Size=300;Min Pool Size=0;Connection Lifetime=300;packet size=1000;";
-		public static readonly string DbDatabase="PMTData";
+		public static readonly string ConnectionString= "server=.;database=Bolgs;User Id=sa;pwd=0306;Enlist=true;Pooling=true;Max Pool Size=300;Min Pool Size=0;Connection Lifetime=300;packet size=1000;";
+		public static readonly string DbDatabase="Bolgs";
 		//public static readonly string ConnectionString= "server=.;database=master;User Id=sa;pwd=111111;Enlist=true;Pooling=true;Max Pool Size=300;Min Pool Size=0;Connection Lifetime=300;packet size=1000;";
 		//public static readonly string DbDatabase="carmaint";
 	}
