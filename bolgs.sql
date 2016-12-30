@@ -17,8 +17,22 @@ create table Tbbolgs
    states  varchar(50)
 )
 
+create table TbUser
+(
+   ID int identity(1,1),
+   username varchar(50),
+   password varchar(20),
+   role varchar(20),
+   loginip varchar(15),
+   states varchar(50)
+)
 
+insert into Tbbolgs(bolgname,author,times,article,picture,details,states) values('我的博客','天更蓝','','我的博客我的博文','/..../','详情','备注')
 insert into Tbbolgs(bolgname,author,article,picture,details,states) values('我的博客','天更蓝','我的博客我的博文','/..../','详情','备注')
 insert into Tbbolgs(bolgname,author,article,picture,details,states) values('我的博客','天更蓝','我的博客我的博文','/..../','详情','备注')
 insert into Tbbolgs(bolgname,author,article,picture,details,states) values('我的博客','天更蓝','我的博客我的博文','/..../','详情','备注')
-insert into Tbbolgs(bolgname,author,article,picture,details,states) values('我的博客','天更蓝','我的博客我的博文','/..../','详情','备注')
+
+
+select * from Tbbolgs
+
+delete from  Tbbolgs
